@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution{
+    margin-top: 0.25rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Outfit',sans-serif ;
+    background-color: hsl(217, 54%, 11%);
+    padding: 1.25rem;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%, 0.6); 
+    font-size: 18px;
+}
+.container {
+  background-color:hsl(216, 50%, 16%) ;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  max-width: 80%;
+}
+.container article:first-child img {
+    border-radius: 0.5rem;
+}
+.container h2 { 
+    padding: 15px 0;
+    color: white;
+}
+.container h2:hover{ 
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+.container article:first-child img {
+position:relative ;
+}
+.img-transparent {
+position: absolute;
+top: 0;
+background-color: hsl(178, 100%, 50%, 70%);
+width: 310px;
+height: 310px;
+z-index: 10;
+margin-top: 2.5rem;
+border-radius: 0.5rem;
+opacity: 1;
+transition: opacity 0.5s ease-in-out;
+cursor: pointer;
+
+}
+.img-transparent:hover {
+opacity: 0;
+}
+.img-transparent img{
+top: 50%;
+left: 50%;
+position:absolute ;
+    transform: translate(-50%, -50%);
+}
+img {
+    max-width: 100%;
+}
+.container p {
+    line-height: 2rem;
+}
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+.container ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid  hsl(215, 32%, 27%) ;
+    font-size: 16px;
+}
+.container img {
+    margin-right: 0.5rem;
+}
+.container ul li:first-child {
+    color:hsl(178, 100%, 50%) ;
+}
+.footer {
+    display:  flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+.footer img {
+    width: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.footer span {
+    color:hsl(0, 0%, 100%, 0.6) ;
+}
+.footer span:hover{
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
+
+@media (min-width:500px ){
+    .container{
+        width: 350px;
+        margin: 0 auto 1.5rem;
+    }
+    .attribution{
+        position: fixed;
+        bottom: 1rem;
+    }
+}
+
